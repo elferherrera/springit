@@ -6,6 +6,7 @@ import javax.persistence.Id;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
 @Entity
 @Data
@@ -16,7 +17,10 @@ public class Link {
     @GeneratedValue
     private long id;
 
+    @NonNull
     private String title;
+
+    @NonNull
     private String url;
 
     // comments
