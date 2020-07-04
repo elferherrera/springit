@@ -27,7 +27,7 @@ public class SpringitApplication {
     // initialize a line in the database. Since we are using
     // H2 the database will be rebooted every time the server
     // is started
-    @Bean
+    //@Bean
     CommandLineRunner runner(LinkRepository linkRepository, CommentRepository commentRepository) {
         return args -> {
             log.info("Initializing the database");
